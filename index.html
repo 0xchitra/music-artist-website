@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website" />
+  <title>Kaif Tanjilur Rahman - Independent Singer</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: '#8fa8c8',
+            'accent-light': '#b8cfe4',
+            'accent-dark': '#5d7fa8',
+            charcoal: '#1a1a1a',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['"Playfair Display"', 'serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-[#faf8f4] text-[#1c1917] font-sans">
+
+  <div class="cursor-glow"></div>
+
+
+<!-- nav -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#faf8f4]/80 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex items-center justify-between h-[72px]">
+
+        <a href="#hero" class="flex items-center gap-3 group">
+          <span class="text-[#1c1917] font-semibold text-sm tracking-widest uppercase">Kaif Music</span>
+        </a>
+
+<!-- Desktop Nav -->
+        <div class="desktop-nav flex items-center gap-10">
+          <a href="#music" class="nav-link" data-section="music">Music</a>
+          <a href="#videos" class="nav-link" data-section="videos">Videos</a>
+          <a href="#about" class="nav-link" data-section="about">About</a>
+          <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+          <a href="https://open.spotify.com" target="_blank" rel="noopener" class="btn-primary !py-2.5 !px-6 !text-xs !text-white">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            Listen
+          </a>
+        </div>
+
+<!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+<!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#music">Music</a>
+      <a href="#videos">Videos</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://open.spotify.com" target="_blank" rel="noopener" class="text-accent !text-accent">Stream on Spotify</a>
+    </div>
+  </nav>
+
+<!-- main -->
+  <section id="hero" class="hero-bg relative min-h-screen flex flex-col justify-center overflow-hidden bg-[#faf8f4]">
+
+<!-- Decorative top-right circle -->
+    <div class="absolute top-0 right-0 w-[600px] h-[6000px] rounded-full bg-[#6b9fc2]/8 blur-3xl pointer-events-none -translate-y-1/3 translate-x-1/4"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-[#d2b48c]/12 blur-3xl pointer-events-none translate-y-1/4 -translate-x-1/4"></div>
+
+    <div class="hero-content max-w-7xl mx-auto px-6 lg:px-12 pt-32 pb-24 w-full">
+
+      <div class="reveal section-label mb-8">Independent Artist</div>
+      <h1 class="reveal artist-name text-[clamp(3.2rem,10vw,8rem)] leading-none font-display font-black mb-6 tracking-tight">
+        Kaif<br/>Music
+      </h1>
+
+      <p class="reveal reveal-delay-2 text-[#57534e] text-lg md:text-xl font-light tracking-wide max-w-lg mb-4">
+        Singer · Lyricist · Composer · EDM <br/>Music that stay with you.
+      </p>
+
+      <div class="reveal reveal-delay-3 flex flex-wrap gap-2 mb-10">
+        <span class="genre-tag">Assamese</span>
+        <span class="genre-tag">Hindi</span>
+        <span class="genre-tag">Romantic</span>
+        <span class="genre-tag">Original</span>
+      </div>
+
+<!-- buttons here -->
+      <div class="reveal reveal-delay-4 flex flex-wrap gap-4 mb-14">
+        <a href="https://open.spotify.com/track/3hiRoPeSQoKFDrxFhn5o2C?si=ap9--hPiStGoo5GlCueWBg" target="_blank" class="btn-primary rounded-full">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Listen Now
+        </a>
+        <a href="https://youtube.com/@kaifmusic.official-21?si=7dlsQUJP5ah--SHr" target="_blank" class="btn-outline rounded-full border-[#000000]/30">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m10 8 6 4-6 4V8z" fill="currentColor" stroke="none"/></svg>
+          Watch Videos
+        </a>
+      </div>
+
+      <div class="reveal reveal-delay-5 flex items-center gap-3">
+        <span class="text-[#a8a29e] text-xs tracking-widest uppercase font-medium mr-2">Follow</span>
+
+<!-- insta -->
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+
+<!-- yt -->
+        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.4 2.8-5.4 2.7z"/></svg>
+        </a>
+
+<!-- spotify -->
+        <a href="https://open.spotify.com" target="_blank" rel="noopener" class="social-icon" aria-label="Spotify">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+      <span class="text-[10px] tracking-[0.2em] uppercase text-[#a8a29e]">Scroll</span>
+      <div class="w-px h-10 bg-gradient-to-b from-[#a8a29e] to-transparent animate-bounce"></div>
+    </div>
+
+  </section>
+
+
+<!-- music -->
+  <section id="music" class="py-28 max-w-7xl mx-auto px-6 lg:px-12 bg-[#faf8f4]">
+
+    <div class="reveal flex items-end justify-between mb-16 gap-6 flex-wrap">
+      <div>
+        <div class="section-label mb-4">Discography</div>
+        <h2 class="font-display text-4xl md:text-5xl font-bold text-[#1c1917] leading-tight">Featured Music</h2>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- enajori -->
+      <div class="music-card reveal reveal-delay-3">
+        <div class="music-card-img">
+          <img src="img/enajori.jpeg" alt="enajori" loading="lazy"/>
+          <div class="play-overlay">
+            <div class="play-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0f0f0f"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-[#1c1917] font-semibold text-lg mb-1 tracking-tight">Enajori</h3>
+          <p class="text-[#a8a29e] text-sm mb-5">ft RKXAN</p>
+          <div class="flex items-center gap-4 border-t border-[#000000] pt-5">
+            <span class="inline-flex bg-[#000000] rounded-full px-3 py-1"><a href="https://youtu.be/B3g5ErPPV-k?si=gWiiwp-e6f0g1pqp" target="_blank" rel="noopener" class="platform-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.4 2.8-5.4 2.7z"/></svg>
+              YouTube
+            </a></span>
+            <span class="inline-flex bg-[#000000] rounded-full px-3 py-1"><a href="https://open.spotify.com" target="_blank" rel="noopener" class="platform-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+              Spotify
+            </a></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- tmr namote -->
+      <div class="music-card reveal reveal-delay-3">
+        <div class="music-card-img">
+          <img src="img/tumare namote.jpeg" alt="Tumar Namote — Kaif Tanjilur Rahman" loading="lazy"/>
+          <div class="play-overlay">
+            <div class="play-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0f0f0f"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-[#1c1917] font-semibold text-lg mb-1 tracking-tight">Tumar Namote</h3>
+          <p class="text-[#a8a29e] text-sm mb-5">ft. Riyanshi Bhuyan • RKXAN</p>
+          <div class="flex items-center gap-4 border-t border-[#000000] pt-5">
+            <span class="inline-flex bg-[#000000] rounded-full px-3 py-1"><a href="https://youtu.be/x9CTTZYVb1M?si=iyTqoYN8b_vxNzpy" target="_blank" rel="noopener" class="platform-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.4 2.8-5.4 2.7z"/></svg>
+              YouTube
+            </a></span>
+            <span class="inline-flex bg-[#000000] rounded-full px-3 py-1"><a href="https://open.spotify.com/track/3hiRoPeSQoKFDrxFhn5o2C?si=ap9--hPiStGoo5GlCueWBg" target="_blank" rel="noopener" class="platform-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+              Spotify
+            </a></span>
+          </div>
+        </div>
+      </div>
+      
+<!-- tu hi meri -->
+      <div class="music-card reveal reveal-delay-2">
+        <div class="music-card-img">
+          <img src="img/tu hi meri ishq.jpeg" alt="Tu Hi Meri Ishq — Kaif Tanjilur Rahman" loading="lazy"/>
+          <div class="play-overlay">
+            <div class="play-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0f0f0f"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-[#1c1917] font-semibold text-lg mb-1 tracking-tight">Tu Hi Meri Ishq</h3>
+          <p class="text-[#a8a29e] text-sm mb-5">From Kahini</p>
+          <div class="flex items-center gap-4 border-t border-[#000000] pt-5">
+            <span class="inline-flex bg-[#000000] rounded-full px-3 py-1"><a href="https://youtu.be/IWiAmmjKgxI?si=L4uBBYsFGTxeuP2O" target="_blank" rel="noopener" class="platform-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.4 2.8-5.4 2.7z"/></svg>
+              YouTube
+            </a></span>
+            <span class="inline-flex bg-[#000000] rounded-full px-3 py-1"><a href="https://open.spotify.com" target="_blank" rel="noopener" class="platform-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+              Spotify
+            </a></span>
+          </div>
+        </div>
+      </div>
+      
+<!-- prem gatha -->
+            <div class="music-card reveal reveal-delay-1">
+              <div class="music-card-img">
+                <img src="img/prem gatha.jpeg" alt="Prem Gatha — Kaif Tanjilur Rahman" loading="lazy"/>
+                <div class="play-overlay">
+                  <div class="play-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#0f0f0f"><path d="M8 5v14l11-7z"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6">
+          <h3 class="text-[#1c1917] font-semibold text-lg mb-1 tracking-tight">Prem Gatha</h3>
+          <p class="text-[#a8a29e] text-sm mb-5">From Kahini</p>
+          <div class="flex items-center gap-4 border-t border-[#000000] pt-5">
+            <span class="inline-flex bg-[#000000] rounded-full px-3 py-1"><a href="https://youtube.com" target="_blank" rel="noopener" class="platform-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.4 2.8-5.4 2.7z"/></svg>
+              YouTube
+            </a></span>
+            <span class="inline-flex bg-[#000000] rounded-full px-3 py-1"><a href="https://open.spotify.com" target="_blank" rel="noopener" class="platform-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+              Spotify
+            </a></span>
+          </div>
+        </div>
+            </div>
+      
+      
+    </div>
+  </section>
+
+  <hr class="hr-accent max-w-7xl mx-auto" />
+
+<!-- videos -->
+
+  <section id="videos" class="py-28 max-w-7xl mx-auto px-6 lg:px-12">
+
+    <div class="reveal mb-16">
+      <div class="section-label mb-4">Visual Story</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold text-[#1c1917] leading-tight">Video Showcase</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <div class="video-card reveal reveal-delay-2 cursor-pointer">
+        <div class="video-thumb">
+          <img src="img/enajori.jpeg" alt="Enajori" loading="lazy" class="w-full h-full object-cover"/>
+          <div class="video-play-btn">
+            <div class="video-play-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 bg-[#f9f7f3] border-t border-[#e8e1d6]">
+          <p class="text-[#a8a29e] text-xs tracking-widest uppercase mb-1">Official Video</p>
+          <h3 class="text-[#1c1917] font-semibold text-base">Enajori - ft. RKXAN</h3>
+        </div>
+      </div>
+
+      <div class="video-card reveal reveal-delay-2 cursor-pointer">
+        <div class="video-thumb">
+          <img src="img/tumare namote.jpeg" alt="Tumar Namote" loading="lazy" class="w-full h-full object-cover"/>
+          <div class="video-play-btn">
+            <div class="video-play-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 bg-[#f9f7f3] border-t border-[#e8e1d6]">
+          <p class="text-[#a8a29e] text-xs tracking-widest uppercase mb-1">Official Video</p>
+          <h3 class="text-[#1c1917] font-semibold text-base">Tumar Namote - ft. Riyanshi Bhuyan</h3>
+        </div>
+      </div>
+      
+      <div class="video-card reveal reveal-delay-1 cursor-pointer">
+        <div class="video-thumb">
+          <img src="/img/tu hi meri ishq.jpeg" alt="Tu hi meri ishq" class="w-full h-full object-cover"/>
+          <div class="video-play-btn">
+            <div class="video-play-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 bg-[#f9f7f3] border-t border-[#e8e1d6]">
+          <p class="text-[#a8a29e] text-xs tracking-widest uppercase mb-1">Official Video</p>
+          <h3 class="text-[#1c1917] font-semibold text-base">Tu Hi Meri Ishq</h3>
+        </div>
+      </div>
+
+      <div class="video-card reveal reveal-delay-1 cursor-pointer">
+        <div class="video-thumb">
+          <img src="/img/prem gatha.jpeg" alt="Prem Gatha" class="w-full h-full object-cover"/>
+          <div class="video-play-btn">
+            <div class="video-play-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="p-5 bg-[#f9f7f3] border-t border-[#e8e1d6]">
+          <p class="text-[#a8a29e] text-xs tracking-widest uppercase mb-1">Official Video</p>
+          <h3 class="text-[#1c1917] font-semibold text-base">Prem Gatha - From Kahini</h3>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="reveal mt-10 text-center">
+      <a href="https://youtube.com/@kaifmusic.official-21?si=7dlsQUJP5ah--SHr" target="_blank" rel="noopener" class="btn-outline inline-flex">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.4 2.8-5.4 2.7z"/></svg>
+        All Videos on YouTube
+      </a>
+    </div>
+    
+  </section>
+  
+  <hr class="hr-accent max-w-7xl mx-auto" />
+  
+  <!-- about section -->
+  <section id="about" class="py-16 md:py-24 lg:py-28 max-w-7xl mx-auto px-6 lg:px-12">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-24 items-center">
+      
+<!-- pic -->
+      <div class="reveal-left order-2 lg:order-1 flex justify-center lg:justify-end">
+        <img src="img/about.jpeg" alt="Kaif Tanjilur Rahman — Independent Singer" loading="lazy"
+        class="w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-full xl:max-w-md rounded-xl md:rounded-2xl aspect-square sm:aspect-[4/5] lg:aspect-[3/4] object-cover object-top shadow-xl transition-all duration-300 hover:shadow-2xl" />
+      </div>
+      
+<!-- About -->
+      <div class="order-1 lg:order-2 text-center lg:text-left flex flex-col items-center lg:items-start">
+        <h2 class="reveal reveal-delay-1 font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1c1917] leading-tight mb-4 sm:mb-6">
+          Where Every Note<br class="hidden sm:block lg:hidden xl:block"/>Tells a Story
+        </h2>
+        <p class="reveal reveal-delay-2 text-sm sm:text-base lg:text-lg text-[#57534e] leading-relaxed mb-4 sm:mb-5 max-w-2xl">
+          Kaif Tanjilur Rahman is an independent singer from Assam, driven by emotion,
+          nature, and honest storytelling. His music blends Assamese and Hindi, rooted in
+          the warmth of folk tradition and shaped by contemporary production.
+        </p>
+        <p class="reveal reveal-delay-3 text-sm sm:text-base lg:text-lg text-[#57534e] leading-relaxed mb-8 sm:mb-10 max-w-2xl">
+          From the romantic poetry of <em class="text-[#a1a1aa] font-medium">Prem Gatha</em> to the devotion in
+          <em class="text-[#a1a1aa] font-medium">Tumar Namote</em>, each song is a chapter, each verse a
+          feeling he hopes you'll carry with you long after the music ends.
+        </p>
+
+        <div class="reveal reveal-delay-5">
+          <a href="https://open.spotify.com" target="_blank" rel="noopener" class="btn-primary inline-flex items-center justify-center gap-2">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+            Stream on Spotify
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="hr-accent max-w-7xl mx-auto" />
+
+  <!-- socials -->
+  <section class="py-24 max-w-7xl mx-auto px-6 lg:px-12 text-center">
+    <div class="reveal section-label mb-6 justify-center">Follow Along</div>
+    <h2 class="reveal reveal-delay-1 font-display text-4xl md:text-5xl font-bold text-[#1c1917] mb-4">Stay Connected</h2>
+    <p class="reveal reveal-delay-2 text-[#57534e] mb-14 max-w-md mx-auto">New music, behind-the-scenes content, and updates — follow Kaif on all platforms.</p>
+
+    <div class="reveal reveal-delay-3 grid grid-cols-1 md:grid-cols-3 gap-5 max-w-2xl mx-auto">
+
+<!-- insta -->
+      <a href="https://www.instagram.com/kaaifmusic?igsh=M3R2NHEyY3QxbDRz" target="_blank" rel="noopener"
+         class="flex flex-col items-center gap-4 p-8 rounded border border-white/7 bg-white/2 hover:border-accent/30 hover:bg-accent/5 transition-all duration-300 group">
+        <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-accent/40 transition-colors duration-300">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="text-[#71717a] group-hover:text-accent transition-colors">
+            <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-[#1c1917] font-semibold text-sm">Instagram</p>
+          <p class="text-[#52525b] text-xs mt-1">@kaaifmusic</p>
+        </div>
+      </a>
+
+<!-- YouTube -->
+      <a href="https://youtube.com/@kaifmusic.official-21?si=7dlsQUJP5ah--SHr" target="_blank" rel="noopener"
+         class="flex flex-col items-center gap-4 p-8 rounded border border-white/7 bg-white/2 hover:border-accent/30 hover:bg-accent/5 transition-all duration-300 group">
+        <div class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-accent/40 transition-colors duration-300">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-[#71717a] group-hover:text-accent transition-colors">
+            <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.4 2.8-5.4 2.7z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-[#1c1917] font-semibold text-sm">YouTube</p>
+          <p class="text-[#a8a29e] text-xs mt-1">Kaif Music</p>
+        </div>
+      </a>
+
+<!-- Spotify -->
+      <a href="https://open.spotify.com" target="_blank" rel="noopener"
+         class="flex flex-col items-center gap-4 p-8 rounded border border-[#e8e1d6] bg-white hover:border-[#96bdd4] hover:bg-[#f0f6fb] transition-all duration-300 group">
+        <div class="w-12 h-12 rounded-full border border-[#e8e1d6] flex items-center justify-center group-hover:border-[#6b9fc2] transition-colors duration-300">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-[#a8a29e] group-hover:text-[#6b9fc2] transition-colors">
+            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="text-[#1c1917] font-semibold text-sm">Spotify</p>
+          <p class="text-[#a8a29e] text-xs mt-1">Kaif Music</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <hr class="hr-accent max-w-7xl mx-auto" />
+
+
+<!-- contact -->
+  <section id="contact" class="py-28 max-w-7xl mx-auto px-6 lg:px-12">
+
+    <div class="contact-card">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+        <div>
+          <div class="reveal section-label mb-6">Get in Touch</div>
+          <h2 class="reveal reveal-delay-1 font-display text-4xl md:text-5xl font-bold text-[#1c1917] leading-tight mb-4">
+            Work With<br/>Kaif
+          </h2>
+          <p class="reveal reveal-delay-2 text-[#57534e] leading-relaxed mb-8">
+            Interested in booking Kaif for a performance, collaboration, or press feature?
+            Reach out through social media or send a direct message.
+          </p>
+          <div class="reveal reveal-delay-3 flex flex-wrap gap-3">
+            <a href="https://www.instagram.com/kaaifmusic?igsh=M3R2NHEyY3QxbDRz" target="_blank" rel="noopener" class="social-icon w-auto px-5 gap-2 rounded text-sm font-medium flex items-center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+              </svg>
+              Instagram DM
+            </a>
+            <a href="https://youtube.com/@kaifmusic.official-21?si=7dlsQUJP5ah--SHr" target="_blank" rel="noopener" class="social-icon w-auto px-5 gap-2 rounded text-sm font-medium flex items-center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.4 2.8-5.4 2.7z"/>
+              </svg>
+              YouTube
+            </a>
+          </div>
+        </div>
+
+        <!-- Quote / CTA panel -->
+        <div class="reveal reveal-delay-2">
+          <blockquote class="border-l-2 border-[#6b9fc2] pl-6 mb-8">
+            <p class="text-[#1c1917] text-xl font-display italic leading-relaxed">
+              "Music is the one language where silence between notes speaks louder than words."
+            </p>
+            <cite class="text-[#a8a29e] text-sm mt-3 block not-italic">— Kaif Music</cite>
+          </blockquote>
+          <div class="bg-[#f0f6fb] border border-[#c2d9ea] rounded p-6">
+            <p class="text-[#57534e] text-sm leading-relaxed mb-4">
+              Available for live performances, studio collaborations, and press features.
+              Response within 48 hours.
+            </p>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="btn-primary w-full justify-center">
+              Send a Message
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+<!-- <footer -->
+  <footer class="py-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <!-- Brand -->
+        <div class="flex items-center gap-3">
+          <div class="w-7 h-7 rounded-full bg-[#6b9fc2]/15 border border-[#6b9fc2]/30 flex items-center justify-center">
+            <div class="w-2 h-2 rounded-full bg-[#6b9fc2]"></div>
+          </div>
+          <span class="text-[#57534e] text-sm tracking-widest uppercase font-medium"><a href="https://chitras-portfolio.vercel.app/">developed by <span class=" inline-flex bg-[#000] hover:bg-[#a8a29e] rounded-full py-2 px-2 text-[#fff]">@0xchitra</span></a>
+          </span>
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-[#3f3f46] text-xs tracking-wide">
+          <span class="text-[#a8a29e]">&copy; <span id="year"></span> Kaif Music. All rights reserved.</span>
+        </p>
+
+        <!-- Social icons -->
+        <div class="flex items-center gap-3">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon !w-8 !h-8" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon !w-8 !h-8" aria-label="YouTube">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.6-.8-2-.9C16.4 5 12 5 12 5s-4.4 0-7 .1c-.4.1-1.2.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.8.8 2.3.9C6.8 19 12 19 12 19s4.4 0 7-.2c.4-.1 1.2-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.4 2.8-5.4 2.7z"/>
+            </svg>
+          </a>
+          <a href="https://open.spotify.com" target="_blank" rel="noopener" class="social-icon !w-8 !h-8" aria-label="Spotify">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
